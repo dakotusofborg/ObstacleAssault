@@ -5,7 +5,12 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Unreal/ObstacleAssault/Content/MyStuff/TestLevel.umap"
+				"C:/Unreal/ObstacleAssault/Content/MyStuff/TestLevel.umap",
+				"C:/Unreal/ObstacleAssault/Content/MyStuff/BP_MovingPlatform.uasset",
+				"C:/Unreal/ObstacleAssault/Content/MyStuff/BP_MovingPlatform2.uasset",
+				"C:/Unreal/ObstacleAssault/Content/MyStuff/BP_RotatingPlatform.uasset",
+				"C:/Unreal/ObstacleAssault/Content/MyStuff/MainLevel.umap",
+				"C:/Unreal/ObstacleAssault/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset"
 			]
 		}
 	]
