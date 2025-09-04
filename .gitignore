@@ -401,3 +401,4 @@ Thumbs.db
 # Backup/Temp
 *.bak
 *.tmp
+Intermediate/
