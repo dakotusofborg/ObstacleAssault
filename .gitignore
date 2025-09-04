@@ -362,12 +362,42 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-Binaries/ 
+# Unreal Engine build artifacts
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
 
-DerivedDataCache/ 
+# Visual Studio build artifacts
+*.obj
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+*.ilk
+*.suo
+*.sdf
+*.cachefile
+*.db
+*.log
+*.tlog
+*.VC.db
+*.VC.opendb
 
-Intermediate/ 
+# VS user-specific files
+*.user
+*.userosscache
+*.sln.docstates
 
-Saved/ 
+# Project-specific
+.vscode/
+.idea/
 
-Build/ 
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Backup/Temp
+*.bak
+*.tmp
