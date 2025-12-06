@@ -8,7 +8,11 @@
 				"C:/Dev/ObstacleAssault/Content/MyStuff/TestLevel.umap",
 				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_MovingPlatform.uasset",
 				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_Test.uasset",
-				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_RotatingPlatform.uasset"
+				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_RotatingPlatform.uasset",
+				"C:/Dev/ObstacleAssault/Content/MyStuff/MainLevel.umap",
+				"C:/Dev/ObstacleAssault/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_MovingPlatform2.uasset",
+				"C:/Dev/ObstacleAssault/Content/ThirdPerson/Blueprints/BP_MyFixedCharacter.uasset"
 			]
 		}
 	]
