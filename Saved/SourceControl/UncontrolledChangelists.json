@@ -5,7 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Dev/ObstacleAssault/Content/MyStuff/TestLevel.umap"
+				"C:/Dev/ObstacleAssault/Content/MyStuff/TestLevel.umap",
+				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_MovingPlatform.uasset",
+				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_Test.uasset",
+				"C:/Dev/ObstacleAssault/Content/MyStuff/BP_RotatingPlatform.uasset"
 			]
 		}
 	]

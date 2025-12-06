@@ -11,10 +11,20 @@ AMovingPlatform::AMovingPlatform()
 
 }
 
+int MyTestFunction()
+{
+	return 40; 
+}
+
 // Called when the game starts or when spawned
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
+
+	int ReturnValue = MyTestFunction();
+	UE_LOG(LogTemp, Warning, TEXT("MyTestFunction returned: %d"), ReturnValue);
+
+	StartLocation = GetActorLocation();
 }
 
 // Called every frame
@@ -28,14 +38,39 @@ void AMovingPlatform::Tick(float DeltaTime)
 
 void AMovingPlatform::MovePlatform(float DeltaTime)
 {
-	FVector CurrentLocation = GetActorLocation();
+	DistanceMoved = GetDistanceMoved();
+	
+	if (DistanceMoved >= MoveDistance)
+	{
+		float Overshoot = DistanceMoved - MoveDistance;
 
-	CurrentLocation = CurrentLocation + (PlatformVelocity * DeltaTime);
+		UE_LOG(LogTemp, Warning, TEXT("Overshoot: %f"), Overshoot);
 
-	SetActorLocation(CurrentLocation);
+		FVector MoveDirection = PlatformVelocity.GetSafeNormal();
+		FVector NewStartLocation = StartLocation + MoveDirection * MoveDistance;
+		SetActorLocation(NewStartLocation);
+		StartLocation = NewStartLocation;
+
+		PlatformVelocity = -PlatformVelocity;
+	}
+	else
+	{
+		FVector CurrentLocation = GetActorLocation();
+
+		CurrentLocation = CurrentLocation + (PlatformVelocity * DeltaTime);
+
+		SetActorLocation(CurrentLocation);
+	}
 }
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
 {
 	// Rotation logic would go here
+	FRotator RotatorToAdd = RotationVelocity * DeltaTime;
+	AddActorLocalRotation(RotatorToAdd);
+}
+
+float AMovingPlatform::GetDistanceMoved()
+{ 
+	return FVector::Dist(StartLocation, GetActorLocation());
 }
