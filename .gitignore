@@ -1,9 +1,7 @@
 # Tailored .gitignore for Unreal Engine + Visual Studio
-# Keeps source/code tracked; ignores build outputs, caches and large binary assets.
+# Keep source & project files tracked; ignore builds, caches and large binary content.
 
-# -----------------------
 # Visual Studio / IDE
-# -----------------------
 *.rsuser
 *.suo
 *.user
@@ -17,9 +15,7 @@ ipch/
 *.cachefile
 .vscode/
 
-# -----------------------
 # Build artifacts / binaries
-# -----------------------
 [Bb]in/
 [Oo]bj/
 [Bb]uild/
@@ -37,9 +33,7 @@ Engine/DerivedDataCache/
 Saved/Cooked/
 Saved/Packaged/
 
-# -----------------------
 # Visual C++ / MSBuild / .NET
-# -----------------------
 *.ilk
 *.meta
 *.obj
@@ -62,10 +56,7 @@ Saved/Packaged/
 **/[Pp]ackages/*
 !**/[Pp]ackages/build/
 
-# -----------------------
-# Unreal asset binaries (ignored by default to keep repo small)
-# If you prefer to track them with Git LFS, remove these lines and enable .gitattributes
-# -----------------------
+# Unreal asset binaries (ignored by default to avoid huge repo)
 *.uasset
 *.umap
 *.uexp
@@ -73,7 +64,7 @@ Saved/Packaged/
 *.upk
 *.uptnl
 
-# Typical content directories (adjust for your project layout)
+# Typical content directories (adjust if your project layout differs)
 Content/
 Art/
 Textures/
@@ -81,15 +72,11 @@ Movies/
 Audio/
 Plugins/*/Content/
 
-# -----------------------
-# Project and source (kept)
-# -----------------------
+# Keep project and source
 *.uproject
 /Source/**
 
-# -----------------------
-# Common large files to ignore
-# -----------------------
+# Common large file types
 *.psd
 *.tga
 *.png
@@ -103,9 +90,7 @@ Plugins/*/Content/
 *.7z
 *.rar
 
-# -----------------------
 # Misc
-# -----------------------
 *.cache
 *.coverage
 *.coveragexml
