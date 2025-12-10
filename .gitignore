@@ -25,7 +25,7 @@ ipch/
 [Bb]uild/
 Build/
 Packaged/
-[Bb]inaries/
+Binaries/
 Intermediate/
 Saved/
 SavedStagedBuilds/
@@ -73,9 +73,8 @@ Saved/Packaged/
 *.upk
 *.uptnl
 
-# Typical large content directories (adjust for your project layout)
+# Typical content directories (adjust for your project layout)
 Content/
-Content/**/*
 Art/
 Textures/
 Movies/

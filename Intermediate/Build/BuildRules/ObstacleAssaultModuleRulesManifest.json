@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\Dev\\ObstacleAssault\\Source\\ObstacleAssault\\ObstacleAssault.Build.cs",
-		"C:\\Dev\\ObstacleAssault\\Source\\ObstacleAssault.Target.cs",
-		"C:\\Dev\\ObstacleAssault\\Source\\ObstacleAssaultEditor.Target.cs"
-	],
-	"EngineVersion": "5.6.1"
-}
